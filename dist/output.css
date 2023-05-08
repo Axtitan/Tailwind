@@ -560,12 +560,34 @@ video {
   float: right;
 }
 
+.m-5 {
+  margin: 1.25rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
 
 .mt-40 {
   margin-top: 10rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
 }
 
 .block {
@@ -588,6 +610,10 @@ video {
   height: 100vh;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .max-h-10 {
   max-height: 2.5rem;
 }
@@ -600,6 +626,10 @@ video {
   min-height: 100vh;
 }
 
+.min-h-0 {
+  min-height: 0px;
+}
+
 .w-80 {
   width: 20rem;
 }
@@ -608,12 +638,40 @@ video {
   width: 24rem;
 }
 
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-36 {
+  width: 9rem;
+}
+
 .min-w-full {
   min-width: 100%;
 }
 
 .max-w-lg {
   max-width: 32rem;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.max-w-screen-sm {
+  max-width: 640px;
+}
+
+.max-w-sm {
+  max-width: 24rem;
+}
+
+.max-w-xs {
+  max-width: 20rem;
 }
 
 .flex-1 {
@@ -677,6 +735,10 @@ video {
   padding: 0.625rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -702,6 +764,16 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pl-3 {
   padding-left: 0.75rem;
 }
@@ -710,12 +782,20 @@ video {
   padding-right: 5rem;
 }
 
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
 .text-center {
   text-align: center;
 }
 
 .text-right {
   text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .text-2xl {
@@ -741,6 +821,11 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -790,6 +875,14 @@ video {
   opacity: 0.4;
 }
 
+.focus\:border:focus {
+  border-width: 1px;
+}
+
+.focus\:border-none:focus {
+  border-style: none;
+}
+
 .focus\:border-black:focus {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
@@ -798,4 +891,20 @@ video {
 .focus\:ring-blue-500:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:min-h-screen {
+    min-height: 100vh;
+  }
+
+  .sm\:min-h-0 {
+    min-height: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:min-h-screen {
+    min-height: 100vh;
+  }
 }
