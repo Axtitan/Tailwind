@@ -9,13 +9,13 @@
   <link href="/dist/output.css" rel="stylesheet">
 </head>
 <body>
-  <div class="container min-h-0 bg-[url(https://images.unsplash.com/photo-1543269664-02e941c052f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)] h-auto min-w-full bg-cover bg-center bg-blend-darken px-32 py-10">
+  <div class="container min-h-0 bg-[url(https://images.unsplash.com/photo-1543269664-02e941c052f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)] h-auto max-w-full bg-cover bg-center bg-blend-darken px-32 py-10">
     <nav class="flex items-center">
         <div class="logo text-white text-xl font-semibold font-sans">
             <h4>WORK FROM HOME</h4>
         </div>
         <ul class="flex-1 text-right">
-            <li class="list-none inline-block px-5"><a href="#" class="text-white no-underline px-2">EARN EXTRA CASH FROM THE COMFORT OF YOUR HOME</a></li>
+            <li class="list-none inline- px-5"><a href="#" class="text-white no-underline px-2">EARN EXTRA CASH FROM THE COMFORT OF YOUR HOME</a></li>
         </ul>
     </nav>
     <div class="text-white mt-24 pb-24 max-w-lg pr-20">
@@ -23,34 +23,36 @@
     </div>
   </div>
 
-  <section class="container flex justify-center min-h-0 bg-white min-w-full bg-center bg-cover px-32 py-20">
+  <section class="container justify-center min-h-0 bg-white max-w-full bg-center bg-cover px-32 py-20">
+    <div>
     <div class="text-center">
       <h3 class="font-bold text-2xl">Sign up today</h3>
-      <p class="text-sm font-normal pt-4">If you would like to find out more about how we can help you, please give us a call or drop us an email.</p>
+      <p class="text-xs font-normal pt-4">If you would like to find out more about how we can help you, please give us a call or drop us an Name.</p>
     </div>
 
-    <div class="flex max-w-xl">
+    <div class="flex pt-4">
       <form>
         <div class="mb-6">
-          <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="name@flowbite.com" required>
+          <input type="text" id="small-input" class="block w-full p-2 text-gray-900 border border-gray-300 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500" placeholder="First Name" required>
         </div>
         <div class="mb-6">
-          <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
-          <input type="password" id="password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+          <input type="text" id="small-input" class="block w-full p-2 text-gray-900 border border-gray-300 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500" placeholder="Last Name" required>
         </div>
         <div class="mb-6">
-          <label for="repeat-password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Repeat password</label>
-          <input type="password" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+          <input type="text" id="small-input" class="block w-full p-2 text-gray-900 border border-gray-300 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500" placeholder="Email" required>
         </div>
-        <div class="flex items-start mb-6">
-          <div class="flex items-center h-5">
-            <input id="terms" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required>
-          </div>
-          <label for="terms" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a></label>
+        <div class="mb-6">
+          <input type="text" id="small-input" class="block w-full p-2 text-gray-900 border border-gray-300 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500" placeholder="Phone Number" required>
         </div>
-        <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Register new account</button>
+        <div class="justify-center">
+        <button type="submit" class="text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center">Register new account</button>
+        </div>
       </form>
+      <div class="float-right block p-2.5 max-h- w-full ml-8">
+      <textarea id="message" rows="4" class="text-sm text-gray-900 bg-gray-50 border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Message"></textarea>
+      </div>
     </div>
+  </div>
   </section>
 
   <footer class="text-center">
